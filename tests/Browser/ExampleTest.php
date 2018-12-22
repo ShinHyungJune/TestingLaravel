@@ -28,13 +28,14 @@ class ExampleTest extends DuskTestCase
 
             // 4. Assert that the current url is /feedback
             $browser->assertPathIs('/feedback');
-            */
+
 
             // => 위처럼 시나리오 하나씩 테스트해가면서 늘려나간 후에 다 되면 한꺼번에 아래처럼 정리
             $browser->visit('/')
                 ->clickLinK('Click Me')
                 ->assertSee("You've been clicked, punk.")
                 ->assertPathIs('/feedback');
+            */
         });
     }
 }
